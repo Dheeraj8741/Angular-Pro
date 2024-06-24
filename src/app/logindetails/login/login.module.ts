@@ -2,30 +2,31 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LoginRoutingModule } from './login-routing.module';
-import { LoginComponent } from './login/login.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatSelectModule} from '@angular/material/select';
-import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
-import {MatFormFieldModule} from '@angular/material/form-field';
+
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
- 
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
   declarations: [
-    LoginComponent,
+    LoginPageComponent,
     ForgetPasswordComponent
   ],
   imports: [
     CommonModule,
     LoginRoutingModule,
-    MatInputModule,
-    MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
@@ -37,8 +38,7 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
     MatFormFieldModule,
     MatDialogModule,
     MatSelectModule,
-
-
+    
   ]
 })
 export class LoginModule { }
