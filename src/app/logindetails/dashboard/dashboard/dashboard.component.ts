@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
+   
+//public data="I am Coming From Parent"
+
+public data=[
+  {
+    name: "Angular",
+    fee: 16000
+  },
+  {
+    name:"Dheeraj",
+    age:29
+  }
+]
+ public message:any
+method1(e:any){
+this.message=e
 }
+
+
+}
+
+
