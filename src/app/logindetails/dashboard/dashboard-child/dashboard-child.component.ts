@@ -14,11 +14,11 @@ export class DashboardChildComponent {
   public item=[
    {
      name:"React",
-     fee:22000
+     fee:18000
    },
    {
     name: "Angular",
-    fee: 16000
+    fee: 20000
    }
   ]
  

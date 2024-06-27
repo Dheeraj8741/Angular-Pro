@@ -1,10 +1,5 @@
 footer{
-    text-align: center;
+    padding: 50px;
+    margin: 280px;
     text-decoration: none;
-    background-color: #f8f8f8;
-    width: 100%;
-    margin-top: 450px;
-    padding: 10px;
-    font-size: large;
-    font-weight: bold;
 }

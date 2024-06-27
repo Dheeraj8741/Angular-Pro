@@ -1,3 +1,29 @@
+// import { NgModule } from '@angular/core';
+// import { CommonModule } from '@angular/common';
+
+// import { DashboardRoutingModule } from './dashboard-routing.module';
+// import { DashboardComponent } from './dashboard/dashboard.component';
+// import { HeaderComponent } from './header/header.component';
+// import { FooterComponent } from './footer/footer.component';
+// import { DashboardChildComponent } from './dashboard-child/dashboard-child.component';
+
+
+// @NgModule({
+//   declarations: [
+//     DashboardComponent,
+//     HeaderComponent,
+//     FooterComponent,
+//     DashboardChildComponent
+//   ],
+//   imports: [
+//     CommonModule,
+//     DashboardRoutingModule
+//   ]
+// })
+// export class DashboardModule { }
+
+
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,6 +33,8 @@ import { DashboardChildComponent } from './dashboard-child/dashboard-child.compo
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
+
+import { CountryComponent } from './country/country.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -24,9 +52,10 @@ import {MatSelectModule} from '@angular/material/select';
 
 import {MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { DialogDataComponent } from './dialog-data/dialog-data.component';
+
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
+import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +63,18 @@ import { MatNativeDateModule } from '@angular/material/core';
     DashboardChildComponent,
     HeaderComponent,
     FooterComponent,
-    DialogDataComponent,
+    CountryComponent,
+    MatInputModule,
+    FormsModule, ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatTableModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatNativeDateModule, MatOptionModule
+
   ],
   imports: [
     CommonModule,
@@ -43,21 +83,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatIconModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatDialogModule,
-    MatSelectModule,
-    MatTableModule,
-    MatCheckboxModule,
-    MatDatepickerModule,
-    MatNativeDateModule
+    MatCardModule
   ]
 })
 export class DashboardModule { }
+
