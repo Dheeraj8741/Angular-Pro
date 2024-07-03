@@ -1,16 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-selector: 'my-app',
-template: `
-          <h1>{{title}}</h1>
-          <nav>
-          <a routerLink="/dashboard">dashboard</a>
-          </nav>
-          <router-outlet></router-outlet>
-          `
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'app Loaded';
-
+  title = 'angular';
 }

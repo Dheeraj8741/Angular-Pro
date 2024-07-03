@@ -1,37 +1,29 @@
-// import { NgModule } from '@angular/core';
-// import { RouterModule, Routes } from '@angular/router';
-// import { DashboardComponent } from './dashboard/dashboard.component';
-
-// const routes: Routes = [
-//   {
-//     path: "dashboard",
-//     component:DashboardComponent
-//     }
-// ];
-
-// @NgModule({
-//   imports: [RouterModule.forChild(routes)],
-//   exports: [RouterModule]
-// })
-// export class DashboardRoutingModule { }
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { DashboardChildComponent } from './dashboard-child/dashboard-child.component';
+import { CountryApiComponent } from './country-api/country-api.component';
+import { HomepageComponent } from './homepage/homepage.component';
+
 
 const routes: Routes = [
   {
-    path: "dashboard",
+    path: "",
     component: DashboardComponent
   },
   {
-    path: "dashboard-child",
-    component: DashboardChildComponent
-  }
+    path: "country",
+    component:CountryApiComponent
+  },
+  {
+    path: "home",
+    component:HomepageComponent
+  },
+  
+
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DashboardRoutingModule {}
+export class DashboardRoutingModule { }

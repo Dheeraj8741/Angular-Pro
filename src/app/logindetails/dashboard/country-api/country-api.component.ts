@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { RestapiService } from 'src/app/services/apiservice.service';
+import { RestApiService } from 'src/app/Services/rest-api.service';
 
 @Component({
-  selector: 'app-country',
-  templateUrl: './country.component.html',
-  styleUrls: ['./country.component.css']
+  selector: 'app-country-api',
+  templateUrl: './country-api.component.html',
+  styleUrls: ['./country-api.component.css']
 })
-export class CountryComponent implements OnInit {
+export class CountryApiComponent implements OnInit {
 
   form: FormGroup;
   countries: any[] = [];
@@ -16,7 +16,7 @@ export class CountryComponent implements OnInit {
   displayedColumns: string[] = ['value', 'year'];
   popullationData: any;
 
-  constructor(private fb: FormBuilder, private restAPI: RestapiService) {
+  constructor(private fb: FormBuilder, private restAPI: RestApiService) {
     this.form = this.fb.group({
       selectedCountry: [''],
       selectedCity: ['']
@@ -64,5 +64,3 @@ export class CountryComponent implements OnInit {
       }
   
 }
-
-

@@ -1,15 +1,16 @@
-import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable, map, tap, throwError, timeout } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class RestapiService {
+export class RestApiService {
 
+ 
   constructor(private http: HttpClient) { }
   offlineMessage: string = 'Ooops! You are not connected internet. Please check.';
- 
+
 
  API_URL = 'https://countriesnow.space/api/v0.1'
    // Response mapper
@@ -99,5 +100,4 @@ export class RestapiService {
       window.alert(this.offlineMessage);
     }
   }
-
 }

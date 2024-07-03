@@ -1,13 +1,23 @@
 .extra{
     flex: 1 1 auto;
   }
+  
   .logo{
-    margin-left: 15px;
+    height: 30px;
+    margin-right: -10px;
   }
   .login{
     margin: 10px;
+    color: white;
   }
   .home{
+    margin-right: 25px;
+    color: white;
+  }
+  .contacts{
+    margin-right: 25px;
+  }
+  .about{
     margin-right: 25px;
   }
   .sidenav {
@@ -27,4 +37,15 @@
     justify-content: center;
     align-items: center;
     font-size: 24px;
+  }
+  .btn{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 35px;
+    background: white;
+  }
+  .btn:hover{
+    background:white;
+    color: white;
   }
