@@ -79,30 +79,16 @@ masterToggle(){
 }
 
 
-/*
-
-openDialog(){
-  this.matDialog.open(DialogDataComponent,{
-    width:'350px',
-  });
-  
-}
-*/
-
-
-
-
-
-  //public data="I am Coming From Parent"
+ 
 
 public data=[
   {
     name: "Angular",
-    fee: 5000
+    fee: 19000
   },
   {
     name:"Kumar",
-    age:29
+    age:28
   }
 ]
  public message:any

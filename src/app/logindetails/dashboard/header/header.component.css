@@ -3,22 +3,25 @@
   }
   
   .logo{
-    height: 30px;
-    margin-right: -10px;
+    height: 40px;
+    margin-right: 16px;
+    color:tomato
   }
   .login{
     margin: 10px;
-    color: white;
+    color:tomato
   }
   .home{
     margin-right: 25px;
-    color: white;
+    color:tomato
   }
   .contacts{
     margin-right: 25px;
+    color:tomato;
   }
   .about{
     margin-right: 25px;
+    color:tomato;
   }
   .sidenav {
     position: absolute;
@@ -26,7 +29,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: #eee;
+    background: hsl(0, 0%, 38%);
   }
   mat-sidenav {
     width: 200px;
@@ -46,6 +49,10 @@
     background: white;
   }
   .btn:hover{
-    background:white;
-    color: white;
+    background: hsl(196, 100%, 54%);
+    color: #6c6969;
+  }
+  .country{
+    margin-right: 25px;
+    color:tomato;
   }

@@ -26,10 +26,10 @@ mat-card{
 
 .list{
     border: 1px solid #000;
-    background: #f3f3f3; 
+    background: hsl(0, 100%, 49%); 
     padding: 30px; 
     margin-bottom:15px;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .btn-group{

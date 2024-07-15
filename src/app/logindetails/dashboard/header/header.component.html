@@ -1,5 +1,8 @@
-<mat-toolbar style="background-color: rgb(165, 42, 54);">
-
+<mat-toolbar style="background-color: hsl(308, 100%, 84%);">
+    
+    <a [routerLink]="['/login']" class="primary"> 
+      <img src="https://www.kriyaglobalitservices.com/assets/finalLogo/only_logo.png" alt="Logo" class="logo"/></a>
+  
     <div class="logo">Logo</div>
     <div class="extra"></div>
     <mat-icon> <a [routerLink]="['/login']" class="primary">login</a></mat-icon>
@@ -8,7 +11,19 @@
     <mat-icon> <a [routerLink]="['/dashboard/home']" class="primary">home</a></mat-icon>
     <div class="home">Home</div>
 
+    <mat-icon> <a [routerLink]="['/dashboard/about']" class="primary">announcement</a></mat-icon>
+    <div class="about">About</div>
+
+    <mat-icon> <a [routerLink]="['/dashboard/contacts']" class="primary">perm_contact_calendar</a></mat-icon>
+    <div class="contacts">Contact Us</div>
+
+    <mat-icon> <a [routerLink]="['/dashboard/faq']" class="primary">assignment_turned_in</a></mat-icon>
+    <div class="contacts">FAQ</div>
+    
+    <mat-icon> <a [routerLink]="['/dashboard/country']" class="primary">class</a></mat-icon>
+    <div class="country">Country</div>
    
+ <button class="btn" mat-button (click)="openChangePassword()">ChangePassword</button>
    
   </mat-toolbar>
   

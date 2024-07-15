@@ -1,0 +1,27 @@
+.contact-us-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: grey;
+
+  }
+  .main{
+    background-image: url('https://th.bing.com/th/id/R.40125cd07940e94f7445fe5709f761f2?rik=3yXE7WfN6TCL9Q&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fPhotos-HD-Desktop-Wallpaper.jpg&ehk=vn8%2b3aCeeXRoZ8tzzjXfu%2bnoP5x1mIQmbHBjPfz2IOw%3d&risl=&pid=ImgRaw&r=0 ');
+     width: 100%;
+     height: 100%;
+   
+  }
+  h1{
+    text-align: center;
+    background: #76ecbb;
+    padding: 10px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 100%;
+  }
